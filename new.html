@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Samuel Green</title>
+	<link rel="stylesheet" href="/stylenew.css">
+</head>
+
+<body>
+	<div class="header">
+    	<h1>Samuel Green</h1>
+    </div>
+    <div class="photo">
+    	<img src="/headshot.jpg"/>
+    </div>
+    <div class="boxes">
+    	<div id="blog"><a href="blog.samuelgreen.org">Blog</a></div>
+        <div id="twitter"><a href="www.twitter.com/samlewisgreen>Twitter</a></div>
+        <div id="facebook"><a href="www.facebook.com">Facebook</a></div>
+	</div>
+    <div class="tweetfeed">
+    	<script src="/javascript/twitter-widget.js"></script>
+        <script>
+        new TWTR.Widget({
+          version: 2,
+          type: 'profile',
+          rpp: 3,
+          interval: 6000,
+          width: 450,
+          height: 100,
+          theme: {
+            shell: {
+              background: '#ec4b00',
+              color: '#ffffff'
+            },
+            tweets: {
+              background: '#ffffff',
+              color: '#3d393d',
+              links: '#ec4b00'
+            }
+          },
+          features: {
+            scrollbar: false,
+            loop: false,
+            live: false,
+            hashtags: false,
+            timestamp: false,
+            avatars: false,
+            behavior: 'all'
+          }
+        }).render().setUser('arkavis').start();
+        </script>    
+</body>
+</html>
